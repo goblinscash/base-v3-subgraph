@@ -7,7 +7,7 @@ import { ONE_BD, ZERO_BD, ZERO_BI } from './constants'
 // export const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
 // export const USDC_WETH_03_POOL = '0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8'
 export const WETH_ADDRESS = '0x4200000000000000000000000000000000000006'
-export const USDC_WETH_03_POOL = '0xe373c91c8c8f948ac3c5d76700e4bc6eacf90a22'
+export const USDC_WETH_03_POOL = '0xfb0eca07be5932dd61fee83d62d0ef3a7e3dd584'
 export const STABLECOIN_IS_TOKEN0 = false
 
 // token where amounts should contribute to tracked volume and liquidity
@@ -21,6 +21,7 @@ export const WHITELIST_TOKENS: string[] = [
   '0x50da645f148798f68ef2d7db7c1cb22a6819bb2c', // SPX
   '0x5ca35ebc4f25b042d2cae75914c7e882e631fa9a', // NEIRO
   '0x7be0cc2cadcd4a8f9901b4a66244dcdd9bd02e0f', // uBCH
+  '0x940181a94a35a4569e4529a3cdfb74e38fd98631', // AERO
 
 ]
 
@@ -28,7 +29,7 @@ export const STABLE_COINS: string[] = [
   '0x833589fcd6edb6e08f4c7c32d4f71b54bda02913',
 ]
 
-export const MINIMUM_ETH_LOCKED = BigDecimal.fromString('0.001')
+export const MINIMUM_ETH_LOCKED = BigDecimal.fromString('0.1')
 
 const Q192 = BigInt.fromI32(2).pow(192 as u8)
 export function sqrtPriceX96ToTokenPrices(sqrtPriceX96: BigInt, token0: Token, token1: Token): BigDecimal[] {

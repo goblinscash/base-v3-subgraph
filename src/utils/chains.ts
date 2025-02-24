@@ -146,10 +146,10 @@ export function getSubgraphConfig(): SubgraphConfig {
   else if (selectedNetwork == BASE_NETWORK_NAME) {
     return {
       factoryAddress: '0xe82fa4d4ff25bad8b07c4d1ebd50e83180dd5eb8',
-      stablecoinWrappedNativePoolAddress: '0xe373c91c8c8f948ac3c5d76700e4bc6eacf90a22', // WETH-USDbC 0.05% pool
+      stablecoinWrappedNativePoolAddress: '0xfb0eca07be5932dd61fee83d62d0ef3a7e3dd584', // WETH-USDbC 0.05% pool
       stablecoinIsToken0: false,
       wrappedNativeAddress: '0x4200000000000000000000000000000000000006', // WETH
-      minimumNativeLocked: BigDecimal.fromString('0.001'),
+      minimumNativeLocked: BigDecimal.fromString('0.1'),
       stablecoinAddresses: [
         '0x833589fcd6edb6e08f4c7c32d4f71b54bda02913', // USDC
       ],
@@ -162,6 +162,7 @@ export function getSubgraphConfig(): SubgraphConfig {
         '0x50da645f148798f68ef2d7db7c1cb22a6819bb2c', // SPX
         '0x5ca35ebc4f25b042d2cae75914c7e882e631fa9a', // NEIRO
         '0x7be0cc2cadcd4a8f9901b4a66244dcdd9bd02e0f', // uBCH
+        '0x940181a94a35a4569e4529a3cdfb74e38fd98631', // AERO
         
       ],
       tokenOverrides: [],
