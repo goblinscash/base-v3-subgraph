@@ -149,7 +149,7 @@ export function getSubgraphConfig(): SubgraphConfig {
       stablecoinWrappedNativePoolAddress: '0xfb0eca07be5932dd61fee83d62d0ef3a7e3dd584', // WETH-USDbC 0.05% pool
       stablecoinIsToken0: false,
       wrappedNativeAddress: '0x4200000000000000000000000000000000000006', // WETH
-      minimumNativeLocked: BigDecimal.fromString('0.1'),
+      minimumNativeLocked: BigDecimal.fromString('0.01'),
       stablecoinAddresses: [
         '0x833589fcd6edb6e08f4c7c32d4f71b54bda02913', // USDC
       ],
